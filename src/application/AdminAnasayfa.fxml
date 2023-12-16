@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scnePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="600.0" style="-fx-background-color: #F5EFE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminAnasayfaController">
+   <children>
+      <Label layoutX="153.0" layoutY="14.0" prefHeight="42.0" prefWidth="265.0" style="-fx-background-color: #884A39;" text="Admin AnaSayfa" textFill="#04b20b">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font></Label>
+      <Button fx:id="btn_toplam" layoutX="139.0" layoutY="304.0" mnemonicParsing="false" onAction="#btn_toplam_click" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #47A992;" text="Toplam Satış" />
+      <Button fx:id="btn_ekle" layoutX="321.0" layoutY="304.0" mnemonicParsing="false" onAction="#btn_ekle_click" prefHeight="26.0" prefWidth="115.0" style="-fx-background-color: #99DBF5;" text="Ekle-Çıkar" />
+      <ImageView fitHeight="135.0" fitWidth="144.0" layoutX="117.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/listele.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="167.0" fitWidth="88.0" layoutX="335.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/ekle.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_kpt" layoutX="533.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_kpt_click" text="Kapat" />
+      <ImageView fitHeight="26.0" fitWidth="37.0" layoutX="507.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/kapat.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

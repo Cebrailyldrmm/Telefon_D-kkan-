@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #F5EFE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane fx:id="anchor_Sigin" prefHeight="407.0" prefWidth="400.0" />
+      <AnchorPane fx:id="anchor_Login" layoutX="2.0" prefHeight="407.0" prefWidth="400.0" />
+      <AnchorPane fx:id="anchor_Unut" prefHeight="407.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="32.0" layoutX="119.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/kullanıcı.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="120.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/sifre.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Button fx:id="btn_login" layoutX="231.0" layoutY="284.0" mnemonicParsing="false" onAction="#btn_login_click" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: blue;" text="Login">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.621052622795105" green="0.21851852536201477" blue="0.21851852536201477" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="txt_kul" layoutX="159.0" layoutY="120.0" promptText="Kullanıcı Adı" />
+      <TextField fx:id="txt_pass" layoutX="159.0" layoutY="167.0" promptText="Şifre" />
+      <TextField fx:id="txt_kod" layoutX="255.0" layoutY="215.0" prefHeight="26.0" prefWidth="54.0" />
+      <Label fx:id="lbl_kod" layoutX="92.0" layoutY="217.0" text=".">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_sigin" layoutX="102.0" layoutY="284.0" mnemonicParsing="false" onAction="#btn_sigin_click" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #00DFA2;" text="Sig İn">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.621052622795105" green="0.21851852536201477" blue="0.21851852536201477" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label layoutX="32.0" layoutY="14.0" text="Telefon Dükkanı" textFill="#4d25b9">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_hata" layoutX="151.0" layoutY="367.0" prefHeight="18.0" prefWidth="4.0" textFill="#ef1414" />
+      <Button fx:id="btn_Unut" layoutX="230.0" layoutY="249.0" mnemonicParsing="false" onAction="#btn_Unut_click" style="-fx-background-color: #F5EFE7;" text="Şifremi Unuttum" />
+   </children>
+</AnchorPane>

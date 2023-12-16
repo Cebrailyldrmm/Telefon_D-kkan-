@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #F5EFE7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SiginController">
+   <children>
+      <TextField fx:id="txt_kul" layoutX="168.0" layoutY="87.0" promptText="Kullanıcı Adı" />
+      <TextField fx:id="txt_şifre" layoutX="168.0" layoutY="124.0" promptText="Şifre" />
+      <TextField fx:id="txt_Tşifre" layoutX="168.0" layoutY="175.0" promptText="Yetki Kodu" />
+      <Button fx:id="btn_Sigin" layoutX="243.0" layoutY="269.0" mnemonicParsing="false" onAction="#btn_Sigin_Click" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: blue;" text="Sig İn" textFill="#fad1d1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="123.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/kullanıcı.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="124.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/sifre.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="123.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/yetki.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_kod" layoutX="124.0" layoutY="239.0" text="Label" />
+      <TextField fx:id="txt_kod" layoutX="274.0" layoutY="226.0" prefHeight="26.0" prefWidth="43.0" />
+   </children>
+</AnchorPane>
